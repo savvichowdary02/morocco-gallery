@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Morocco Travel Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="pill">📷 Morocco Memories Gallery</div>
+      <h1>My Morocco Travel Journal</h1>
+      <p>A warm, colorful space to collect favorite moments from Casablanca, Fes, Chefchaouen, the Sahara, and Marrakesh.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="upload-card">
+      <div>
+        <h2>➕ Add Your Photos</h2>
+        <p>Upload pictures from your trip and organize them by city or memory.</p>
+      </div>
+
+      <div class="upload-form">
+        <input id="captionInput" type="text" placeholder="Optional caption, e.g. Sahara sunset" />
+
+        <select id="albumInput">
+          <option>Casablanca</option>
+          <option>Fes</option>
+          <option>Chefchaouen</option>
+          <option>Sahara Desert</option>
+          <option>Dades Valley</option>
+          <option>Marrakesh</option>
+          <option>Food & Souks</option>
+        </select>
+
+        <label class="upload-button">
+          ⬆ Upload Photos
+          <input id="photoInput" type="file" accept="image/*" multiple hidden />
+        </label>
+      </div>
+    </section>
+
+    <section class="filters" id="filters"></section>
+
+    <section id="emptyState" class="empty-state">
+      <div class="empty-icon">📍</div>
+      <h3>Your Morocco gallery is ready</h3>
+      <p>Start by uploading your favorite photos. They will appear here in a clean travel-gallery layout.</p>
+    </section>
+
+    <section id="gallery" class="gallery"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
